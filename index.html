@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>nexus1</title>
+    <meta charset="UTF-8" />
+    <title>My AI Agent</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello there.</h1>
-  <p>This is my first GitHub Pages website.</p>
+    <h1>My Free WebLLM Agent</h1>
+
+    <div id="chat"></div>
+
+    <div class="input-area">
+        <input id="user-input" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="https://unpkg.com/@mlc-ai/web-llm/dist/index.js"></script>
+    <script src="agent.js"></script>
 </body>
 </html>
 
